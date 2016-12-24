@@ -1,0 +1,75 @@
+.bg {
+    background-color: #eeeeee;
+}
+
+@media screen and (min-width: 768px) {  
+  .modal-dialog  {width:900px;}
+}
+
+a.menu-link { 
+  color:#000000;
+  font-family: 'Droid Serif', Georgia, Times, serif;
+  font-size: 22px;
+  text-decoration:none;
+}
+
+dt {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+.name {
+  font-size: 50px;
+  font-family: 'Droid Serif', Georgia, Times, serif;
+  text-shadow: 1px 0 0 #000000;
+}
+
+.occupation {
+  font-size: 20px;
+  font-family: 'Droid Serif', Georgia, Times, serif;
+  text-shadow: 1px 0 0 #000000;
+}
+
+.content-pane {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 18px;
+  font-family: 'Droid Serif', Georgia, Times, serif;
+}
+
+.publication-year-delim {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.publication-year-paragraph{
+  padding-top: 20px;
+}
+
+/*Styles for bibtex.js: */
+.title {
+  font-style: italic;
+}
+
+.modal-body {
+   font-size: 18px;
+}
+
+li.publicationItem  {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blogtext {
+  text-align: justify;
+}
+
+#blogfooter {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 12px;
+}
