@@ -1,4 +1,0 @@
----
-layout: blogarchive
-title: Archive
----

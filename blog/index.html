@@ -1,0 +1,22 @@
+---
+menu: blog
+---
+    <ul>
+    {% for post in site.posts %}
+      <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        &nbsp;
+        <small>
+            <em>({{ post.date | date: "%Y-%m-%d"  }})</em>
+        </small>
+      </li>
+    {% endfor %}
+  </ul>
+
+<div class="row">
+    <div class="col-md-offset-1 col-md-10">
+        <p id="blogfooter">
+            <a href="/feed.xml">RSS Feed</a> &nbsp;&nbsp; <a href="/archive/">Archive</a>
+        </p>
+    </div>
+</div>

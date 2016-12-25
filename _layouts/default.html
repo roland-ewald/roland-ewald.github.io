@@ -1,9 +1,11 @@
+---
+menu: none
+---
 <!DOCTYPE html>
 <html lang="en">
 
-<head>    
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="alternate" type="application/atom+xml" href="{{ site.path }}/feed.xml" title="News Feed">
+<head>
+    <title>Roland Ewald</title>
 
     <meta name="description" content="Homepage of Roland Ewald">
     <meta name="author" content="Roland Ewald">
@@ -27,7 +29,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
 </head>
 
 <body style="overflow-y:scroll;">
@@ -36,73 +37,47 @@
     <div class="container">
 
         <div class="masthead">
-            
             <h2 class="name">Roland Ewald</h2>
             <h4 class="occupation">Software Engineer &#183; Researcher</h4>
                     <hr/>
-                    <ul class="nav nav-pills nav-justified" role="navigation">
-                        <li class="">
+                  <ul class="nav nav-pills nav-justified" role="navigation">
+                        <li class="{% if page.menu=='about' %} active {% endif %}">
                             <a href="/" class="menu-link">
                                 <span class="glyphicon glyphicon-info-sign"></span>
                                 <br/>About Me</a>
                         </li>
-                        <li class="">
+                        <li class="{% if page.menu=='projects' %} active {% endif %}">
                             <a href="/projects/" class="menu-link">
                                 <span class="glyphicon glyphicon-wrench"></span>
                                 <br/>Projects</a>
                         </li>
-                        <li class=" active ">
+                        <li class="{% if page.menu=='blog' %} active {% endif %}">
                             <a href="/blog/" class="menu-link">
                                 <span class="glyphicon glyphicon-comment"></span>
                                 <br/>Blog</a>
                         </li>
-                        <li class="">
+                        <li class="{% if page.menu=='publications' %} active {% endif %}">
                             <a href="/publications/" class="menu-link">
                                 <span class="glyphicon glyphicon-paperclip"></span>
                                 <br/>Publications</a>
                         </li>
-                        <li class="">
+                        <li class="{% if page.menu=='profiles' %} active {% endif %}">
                             <a href="/profiles/" class="menu-link">
                                 <span class="glyphicon glyphicon-cloud"></span>
                                 <br/>Web Profiles</a>
                         </li>
-                        <li class="">
+                        <li class="{% if page.menu=='contact' %} active {% endif %}">
                             <a href="/contact/" class="menu-link">
                                 <span class="glyphicon glyphicon-envelope"></span>
                                 <br/>Contact</a>
                         </li>
                     </ul>
-                
         </div>
         <hr/>
 
         <div class="tab-content content-pane">
-
-<!-- Content goes here -->
-<div id="content">
-  {{ content }}
-    <ul>
-    {% for post in site.posts %}
-      <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        &nbsp;
-        <small>
-            <em>({{ post.date | date: "%Y-%m-%d"  }})</em>
-        </small>
-      </li>
-    {% endfor %}
-  </ul>
-
-<div class="row">
-    <div class="col-md-offset-1 col-md-10">
-        <p id="blogfooter">
-            <a href="{{ site.path }}/feed.xml">RSS Feed</a> &nbsp;&nbsp; <a href="{{ site.path }}/archive.html">Archive</a>
-        </p>
-    </div>
-</div>
-
-</div>
-
+        <!-- Content goes here -->
+        {{content}}
         </div>
 
     </div>
