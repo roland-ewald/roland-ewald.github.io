@@ -33,6 +33,10 @@ On top of that, SQL is much more powerful: in case you also need to include view
 
 __TL;DR: Use [JPA populators with JSON files][6] to initialize simple (single table) test databases, otherwise let your JPA implementation import SQL files instead.__
 
+
+------
+
+
 [^1]: Spring 1.0 was released [more than a decade ago][3]
 [^2]: This is not a critique of Spring as such; its [reference manual][5] is up to date and quite good overall (the only problem might be the lack of a commenting function).
 [^3]: XML files are supported too.

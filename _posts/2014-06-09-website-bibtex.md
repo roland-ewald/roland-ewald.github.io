@@ -157,6 +157,11 @@ A [Jinja][8] template for the publications list could look like this:
 
 So, Flask is indeed as 'micro' as possible, at least when it comes to simple websites... :-)
 
+
+------
+
+
+
 [^1]: Of course I gave [Django][3] a spin as well, but I don't really need most features and thus decided to [keep it simple][5].
 
 [^2]: I also followed [this nice tutorial (German)][1] on how to configure Flask for my current ISP (Strato).

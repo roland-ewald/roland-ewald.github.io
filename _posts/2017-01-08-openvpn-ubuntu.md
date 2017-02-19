@@ -39,4 +39,8 @@ down /etc/openvpn/update-resolv-conf
 
 Good luck!
 
+
+------
+
+
 [^1]: When I configured my clients for the previous VPN setup, it was the other way around: a nightmare on Windows, but a piece of cake on Ubuntu. I guess it really *does* depend on the specific OpenVPN setup.

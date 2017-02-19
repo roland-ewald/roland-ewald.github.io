@@ -12,4 +12,8 @@ Nevertheless, I now switched everything to [Jekyll](http://jekyllrb.com) and hos
 
 Let's see how that goes. At least I've dealt with that particular 'technical debt' before the year ends.
 
+
+------
+
+
 [^1]: As a bonus, the site is now served via HTTPS.
