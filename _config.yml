@@ -24,12 +24,13 @@ kramdown:
   hard_wrap: false
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
 defaults:
   # All pages
-  - 
+  -
     scope:
       path: ""
     values:
