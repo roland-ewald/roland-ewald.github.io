@@ -6,6 +6,22 @@
   .modal-dialog  {width:900px;}
 }
 
+body
+{
+    padding-bottom: 60px;
+}
+
+#footer {
+  background-color: #ffffff;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
+
+
 a.menu-link { 
   color:#000000;
   font-family: 'Droid Serif', Georgia, Times, serif;
