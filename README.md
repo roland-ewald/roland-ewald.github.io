@@ -15,5 +15,9 @@ sudo apt install ruby-full
 # if this does not work because rubygems cannot be reached, adjust IPv6
 # setting for this IP in /etc/gai.conf (see https://stackoverflow.com/a/50349235/109942)
 gem install bundler
+bundle config set --local path .bundle/gems
 bundle install
+# For updates
+bundle update
+bundle lock
 ```
