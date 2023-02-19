@@ -17,6 +17,8 @@ sudo apt install ruby-full
 gem install bundler
 bundle config set --local path .bundle/gems
 bundle install
+# see https://github.com/jekyll/jekyll/issues/8523
+sudo gem install webrick
 # For updates
 bundle update
 bundle lock
