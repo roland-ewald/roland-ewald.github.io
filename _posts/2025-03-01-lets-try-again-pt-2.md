@@ -4,7 +4,7 @@ date:   2025-03-01
 tags: meta worklife blogging notetoself links
 ---
 
-So it turns out I was [wrong on the internet](https://xkcd.com/386/) again, and [the reason I was not blogging more](../../../2016/12/25/lets-try-again.html) had _nothing_ to do with technology, but more with other tasks eating away my time 😅
+So it turns out I was [wrong on the internet](https://xkcd.com/386/) again, and [the reason I was not blogging more](https://roland-ewald.github.io/2016/12/25/lets-try-again.html) had _nothing_ to do with technology, but more with other tasks eating away my time 😅
 
 I'm not sure how much interesting stuff I will have to talk about, anyway, but to get myself into the habit of writing things here regularly (if only for myself) I will start things off easily and just collect interesting things I've stumbled upon over the last few days.
 
