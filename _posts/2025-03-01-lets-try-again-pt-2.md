@@ -17,3 +17,4 @@ A nice writeup [here](https://josephmate.github.io/2025-02-26-3200p-cpu-util/) (
 Fortunately [this vulnerability was apparently found before it was exploited](https://kibty.town/blog/todesktop/) (found on [HN](https://news.ycombinator.com/item?id=43210858)), but otherwise this could have been a total disaster, because [todesktop.com](https://www.todesktop.com/) has some high-profile customers  and such a vulnaribility could result in a "code execution on millions of people", as the author points out. The attack vector is the deployment pipeline:
 
 > [...] with the credentials i have, i could deploy an auto update to any app of my liking, having clients receive it immediately when they restart the app.
+
