@@ -1,7 +1,7 @@
 ---
 menu: blog
 ---
-<h2>Tags</h2>
+<h2><a name="tag-overview"></a>Tags</h2>
 <p>
 
 <!-- Adapted from https://stackoverflow.com/a/21002505/109942 -->
@@ -24,7 +24,7 @@ menu: blog
 
 {% for tag in sortedtags %}
 {% assign upcasetag = tag | upcase %}
-<h3>Posts for <a name="{{tag}}"><span class="label label-primary">{{tag}}</span></a></h3>
+<h3>Posts for <a name="{{tag}}"><span class="label label-primary">{{tag}}</span></a> <a href="#tag-overview" class="reversefootnote" role="doc-backlink">↩</a></h3>
 <ul>
 {% for post in site.posts %}
   {% if (post.tags contains tag) or (post.tags contains upcasetag) %}
