@@ -280,6 +280,7 @@ DEPENDENCIES
   ffi (< 1.17.0)
   github-pages
   jekyll-feed (~> 0.6)
+  jekyll-seo-tag (~> 2.8)
   jekyll-sitemap
   webrick (~> 1.8)
 

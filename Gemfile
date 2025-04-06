@@ -23,3 +23,4 @@ group :jekyll_plugins do
 
 gem "webrick", "~> 1.8"
 gem "ffi", "< 1.17.0"
+gem "jekyll-seo-tag", "~> 2.8"
