@@ -1,7 +1,3 @@
-.bg {
-    background-color: #eeeeee;
-}
-
 @media screen and (min-width: 768px) {  
   .modal-dialog  {width:900px;}
 }
@@ -11,22 +7,39 @@ body
     padding-bottom: 60px;
 }
 
-#footer {
-  background-color: #ffffff;
-  margin-top: 100px;
-  text-align: center;
-  font-size: 12px;
+.name {
+  font-family: 'Droid Serif', Georgia, Times, serif;
 }
 
-.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
-.navbar {min-height:32px !important}
-
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #428bca;
+  --bs-nav-link-hover-color: #495057;
+}
+.nav-pills .nav-link:not(.active):hover {
+  background-color: #e9ecef;
+}
+.nav-link svg {
+  stroke: black;
+  stroke-width: 0.2;
+  margin-bottom: 1rem;
+}
+.nav-link.active svg {
+  stroke: white;
+  stroke-width: 0.2;
+  margin-bottom: 1rem;
+}
 
 a.menu-link { 
   color:#000000;
   font-family: 'Droid Serif', Georgia, Times, serif;
   font-size: 22px;
   text-decoration:none;
+}
+
+#footer {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 dt {
@@ -36,18 +49,6 @@ dt {
 
 a:hover {
   text-decoration:none;
-}
-
-.name {
-  font-size: 50px;
-  font-family: 'Droid Serif', Georgia, Times, serif;
-  text-shadow: 1px 0 0 #000000;
-}
-
-.occupation {
-  font-size: 20px;
-  font-family: 'Droid Serif', Georgia, Times, serif;
-  text-shadow: 1px 0 0 #000000;
 }
 
 .content-pane {
@@ -87,5 +88,5 @@ li.publicationItem  {
 #blogfooter {
   padding-top: 40px;
   text-align: center;
-  font-size: 12px;
+  font-size: 1rem;
 }
