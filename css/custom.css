@@ -2,9 +2,34 @@
   .modal-dialog  {width:900px;}
 }
 
+.container {
+  max-width: 1092px;
+}
+
 body
 {
     padding-bottom: 60px;
+}
+:root {
+  --bs-primary: #428bca;
+  --bs-primary-rgb: 66, 139, 202;
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #428bca;
+}
+.badge-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.badge-link:visited {
+  color: #ffffff;
 }
 
 .name {
@@ -21,12 +46,10 @@ body
 .nav-link svg {
   stroke: black;
   stroke-width: 0.2;
-  margin-bottom: 1rem;
 }
 .nav-link.active svg {
   stroke: white;
   stroke-width: 0.2;
-  margin-bottom: 1rem;
 }
 
 a.menu-link { 
@@ -36,11 +59,30 @@ a.menu-link {
   text-decoration:none;
 }
 
+#blogfooter {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 1rem;
+}
+#blogfooter a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #footer {
   margin-top: 5rem;
   text-align: center;
   font-size: 0.8rem;
 }
+
+#footer a {
+  color: inherit;
+  cursor: default;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
 
 dt {
   font-size: 20px;
@@ -83,10 +125,4 @@ li.publicationItem  {
 
 .blogtext {
   text-align: justify;
-}
-
-#blogfooter {
-  padding-top: 40px;
-  text-align: center;
-  font-size: 1rem;
 }

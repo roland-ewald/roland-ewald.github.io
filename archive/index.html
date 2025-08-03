@@ -12,9 +12,7 @@ menu: blog
 {% endcapture %}
 {% assign sortedtags = tags | downcase | split:' ' | sort %}
 {% for tag in sortedtags %}
-  <a href="#{{tag}}">
-  <span class="label label-primary" style="line-height: 30px;">{{tag}}</span>  
-  </a>
+  <a href="#{{tag}}" class="badge bg-primary badge-link">{{tag}}</a>
 {% endfor %}
 
 </p>

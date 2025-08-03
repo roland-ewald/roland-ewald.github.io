@@ -3,24 +3,24 @@ layout: default
 ---
 <div class="col-md-12 blogtext">
 
-  <header class="post-header">
+  <header>
     <h1>{{ page.title | escape }}</h1>
-    <h5>{{ page.date | date: "%Y-%m-%d" }}</h5>
-    <hr/>
+    <hr class="border-primary opacity-50"/>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <p>
+            <span class="col-md-2">
+                <small class="text-primary">{{ page.date | date: "%Y-%m-%d" }}</small>
+            </span>
+            <span class="col-md-10">
                     {% for tag in page.tags %}
-                    <a href="{{ site.path }}/archive#{{tag}}">
-                        <span class="label label-primary" style="line-height: 30px;">{{ tag }}</span>
+                    <a class="badge bg-primary badge-link" href="{{ site.path }}/archive#{{tag}}">
+                        {{ tag }}
                     </a>
                     {% endfor %}
-                </p>
-            </div>
+            </span>
         </div>
     </div>
-    <hr/>
+    <hr class="border-primary opacity-50"/>
   </header>
 
   {{ content }}
