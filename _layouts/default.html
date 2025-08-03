@@ -17,9 +17,9 @@ menu: none
     <!-- Load static files-->
     <link rel="shortcut icon" href="/img/favicon.png" />
 
-    <link href="/lib/bootstrap.min.css" rel="stylesheet" >
-    <link href="/css/custom.css" rel="preload" as="style">
-    <link href="/css/custom.css" rel="stylesheet" media="screen">
+    <link href="/lib/bootstrap.min.css?{{ site.time | date: '%s%N' }}" rel="stylesheet" >
+    <link href="/css/custom.css?{{ site.time | date: '%s%N' }}" rel="preload" as="style">
+    <link href="/css/custom.css?{{ site.time | date: '%s%N' }}" rel="stylesheet" media="screen">
     
     <link href="/css/code.css" rel="preload" as="style">
     <link href="/css/code.css" rel="stylesheet" media="screen">
@@ -104,7 +104,7 @@ menu: none
 
     </div>
 
-    <script src="/lib/bootstrap.min.js"></script>
+    <script src="/lib/bootstrap.min.js?{{ site.time | date: '%s%N' }}"></script>
 </body>
 
 </html>
