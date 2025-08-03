@@ -37,6 +37,9 @@ a:visited {
 .badge-link:visited {
   color: #ffffff;
 }
+.badge-link:hover {
+  color: #ffffff;
+}
 .profile-link {
   color: #000000;
 }
