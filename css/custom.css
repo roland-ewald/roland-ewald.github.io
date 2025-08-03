@@ -19,10 +19,13 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  color: #32648f;
 }
 a:visited {
-  color: #428bca;
+  color: #32648f;
+}
+.link-primary:hover {
+  color: #32648f !important;
 }
 .badge-link {
   color: #ffffff;
@@ -83,21 +86,15 @@ a.menu-link {
   text-decoration: underline;
 }
 
-
-dt {
-  font-size: 20px;
-  padding-top: 20px;
-}
-
-a:hover {
-  text-decoration:none;
-}
-
 .content-pane {
   font-size: 20px;
   padding-top: 10px;
   padding-left: 18px;
   font-family: 'Droid Serif', Georgia, Times, serif;
+}
+
+.pub-modal {
+  cursor: pointer;
 }
 
 .publication-year-delim {
