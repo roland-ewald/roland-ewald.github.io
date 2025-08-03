@@ -6,10 +6,9 @@ menu: none
 
 <head>
     <title>Roland Ewald</title>
-
-    <meta name="description" content="Homepage of Roland Ewald">
     <meta name="author" content="Roland Ewald">
-    <meta name="keywords" content="Software,Research,Programming,Homepage">
+    <meta name="description" content="Homepage of Roland Ewald">
+    <meta name="keywords" content="Software,Research,Programming,Homepage,Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,72 +26,84 @@ menu: none
 
     <link href="/fonts/droid-serif.css" rel="stylesheet" type="text/css">
     <link href="/fonts/droid-sans.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="/lib/html5shiv.js"></script>
-      <script src="/lib/respond.min.js"></script>
-    <![endif]-->
-
 {% seo %}
 </head>
 
-<body style="overflow-y:scroll;">
-    <!-- make sure scrollbar is always displayed, to avoid left-shift -->
+<!-- Make sure content is centered and scrollbar is always displayed, to avoid left-shift: -->
+<body class="bg-light justify-content-center" style="overflow-y:scroll;">
 
-    <div class="container">
+    <div class="container py-3">
 
-        <div class="masthead">
-            <h2 class="name"><a href="/" style="color: inherit; text-decoration: inherit;">Roland Ewald</a></h2>
-            <h4 class="occupation">Software Engineer &#183; Researcher</h4>
-                    <hr/>
-                  <ul class="nav nav-pills nav-justified" role="navigation">
-                        <li class="{% if page.menu=='about' %} active {% endif %}">
-                            <a href="/" class="menu-link">
-                                <span class="glyphicon glyphicon-info-sign"></span>
+        <div class="text-white text-left pt-2 pb-5">            
+                <ul class="nav nav-pills nav-justified flex-column flex-lg-row" role="navigation">                    <li>
+                        <h2 class="name" style="width: 15rem"><a href="/" style="color: #666666; text-decoration: none;">Roland Ewald</a></h2>
+                    </li>
+
+                        <li class="nav-item">
+                            <a href="/" class="menu-link nav-link {% if page.menu=='about' %} active {% endif %}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                                </svg>
                                 <br/>About Me</a>
                         </li>
-                        <li class="{% if page.menu=='projects' %} active {% endif %}">
-                            <a href="/projects/" class="menu-link">
-                                <span class="glyphicon glyphicon-wrench"></span>
+                        <li class="nav-item">
+                            <a href="/projects/" class="menu-link nav-link {% if page.menu=='projects' %} active {% endif %}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
+                                    <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
+                                    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+                                </svg>
                                 <br/>Projects</a>
                         </li>
-                        <li class="{% if page.menu=='blog' %} active {% endif %}">
-                            <a href="/blog/" class="menu-link">
-                                <span class="glyphicon glyphicon-comment"></span>
+                        <li class="nav-item">
+                            <a href="/blog/" class="menu-link nav-link {% if page.menu=='blog' %} active {% endif %}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                </svg>
                                 <br/>Blog</a>
                         </li>
-                        <li class="{% if page.menu=='publications' %} active {% endif %}">
-                            <a href="/publications/" class="menu-link">
-                                <span class="glyphicon glyphicon-paperclip"></span>
+                        <li class="nav-item">
+                            <a href="/publications/" class="menu-link nav-link {% if page.menu=='publications' %} active {% endif %}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                </svg>
                                 <br/>Publications</a>
-                        </li>
-                        <li class="{% if page.menu=='profiles' %} active {% endif %}">
-                            <a href="/profiles/" class="menu-link">
-                                <span class="glyphicon glyphicon-cloud"></span>
-                                <br/>Web Profiles</a>
-                        </li>
-                        <li class="{% if page.menu=='contact' %} active {% endif %}">
-                            <a href="/contact/" class="menu-link">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                                <br/>Contact</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a href="/profiles/" class="menu-link nav-link {% if page.menu=='profiles' %} active {% endif %}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                </svg>
+                                <br/>Profiles</a>
                         </li>
                     </ul>
         </div>
-        <hr/>
-
-        <div class="tab-content content-pane">
+        <div class="tab-content content-pane show">
         <!-- Content goes here -->
         {{content}}
         </div>
 
-        <div id="footer" class="navbar navbar-default navbar-static-bottom navbar-fixed-bottom">
-            <a href="/">About Me</a> | <a href="/projects/">Projects</a> | <a href="/blog/">Blog</a> (<a href="/archive/">Archive</a>, <a href="/feed.xml">RSS</a>) | <a href="/publications/">Publications</a> | <a href="/profiles/">Web Profiles</a> | <a href="/contact/">Contact</a> &nbsp;•&nbsp; <a href="/contact/">Imprint</a>  | <a href="/privacy/">Privacy Policy</a>
+        <div id="footer" class="navbar-light bg-light">
+            <p>
+                Verantwortlich f&uuml;r den Inhalt dieser Website gem&auml;&szlig; &sect; 18 MStV:<br/>
+                Roland Ewald&nbsp;•&nbsp;Anklamer Str. 3,&nbsp;18057 Rostock,&nbsp;Germany&nbsp;•&nbsp;<a href="mailto:roland&#46;ewald&#64;acm&#46;org">roland&#46;<!-- >@. -->ewald&#64;acm&#46;org</a>
+            </p>
+            <p>
+                <a href="/">About Me</a> | <a href="/projects/">Projects</a> | <a href="/blog/">Blog</a> (<a href="/archive/">Archive</a>, <a href="/feed.xml">RSS</a>) | <a href="/publications/">Publications</a> | <a href="/profiles/">Profiles</a> | <a href="/privacy/">Privacy Policy</a>
+            </p>
+
+
+                <p>
+                    <small>This site uses
+                    <a href="https://jekyllrb.com" target="_blank">Jekyll</a> and
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>.</small>
+                </p>
         </div>
 
     </div>
 
-    <script src="/lib/jquery.min.js"></script>
     <script src="/lib/bootstrap.min.js"></script>
 </body>
 
