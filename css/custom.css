@@ -10,10 +10,22 @@ body
 {
     padding-bottom: 60px;
 }
+
 :root {
   --bs-primary: #428bca;
   --bs-primary-rgb: 66, 139, 202;
+  --bs-btn-bg: #428bca;
+  --bs-btn-active-color: #428bca;
 }
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
 a {
   color: #428bca;
   text-decoration: none;
