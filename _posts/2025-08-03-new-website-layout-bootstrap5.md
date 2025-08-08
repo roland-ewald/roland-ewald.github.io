@@ -14,7 +14,7 @@ When I started with this task, my intuition seemed right, in the sense that I co
 
 However, when it came to some more mundane tasks, like applying the same kind of change to all HTML elements in a given structure, I also turned to AI[^copilot], and this did not work at all: the files were a bit too large and the LLM was too focused on only fixing a very narrow example, not _all_ instances that needed fixing (so in those cases just running a simple search&replace would have been more effective). Worse, it started to switch _content_ around, i.e. it introduced errors without any reason. Clearly, there is still some way to go before we can use these tools as "semi-smart refactoring tools" on files that are not trivially short.
 
-Bottom line: I had to do these boring changes myself, but at least I could drop some very outdated tools and some things a marginally nicer now. Still, I did not yet manage to improve the projects page... 🥲
+Bottom line: I had to do these boring changes myself, but at least I could drop some very outdated tools and some things are marginally nicer now. Still, I did not yet manage to improve the projects page... 🥲
 
 --
 
@@ -22,4 +22,4 @@ Bottom line: I had to do these boring changes myself, but at least I could drop 
 
 [^gemini]: I used [Gemini](https://gemini.google.com) for this, with one of my self-defined 'Gems' to keep the answers concise and include links to the original sources.
 
-[^copilot]: Here I used [CoPilot](https://github.com/features/copilot), which is well-integrated into VSCode.
+[^copilot]: Here I used [CoPilot](https://github.com/features/copilot), which is well-integrated into VS Code.
